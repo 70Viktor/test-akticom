@@ -1,0 +1,25 @@
+.appButton {
+	padding: 6px 12px;
+	border-radius: 4px;
+	color: var(--text-color);
+	background: var(--border-color);
+	font-size: 14px;
+	transition-property: color, background-color;
+	transition-timing-function: var(--ease-out);
+	transition-duration: 0.2s;
+
+	@include hover {
+		color: var(--bg-color);
+		background: var(--text-color);
+	}
+
+	&.accent {
+		color: var(--bg-color);
+		background: var(--text-color);
+
+		@include hover {
+			color: var(--text-color);
+			background: var(--border-color);
+		}
+	}
+}

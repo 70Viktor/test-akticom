@@ -1,0 +1,23 @@
+.appLayout {
+	position: relative;
+	display: grid;
+	grid-template-columns: 20% 80%;
+
+	@include --md {
+		grid-template-columns: 1fr;
+	}
+}
+
+.appContent {
+	position: relative;
+	height: 85dvh;
+	padding-inline: 30px;
+	border-bottom: 1px solid var(--border-color);
+	background: var(--content-bg-color);
+	overflow: auto;
+
+	@include --md {
+		height: calc(100dvh - var(--sidebar-button-height));
+		padding-inline: 12px;
+	}
+}

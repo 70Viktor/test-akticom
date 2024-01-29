@@ -1,7 +1,36 @@
-import React, {FC} from 'react';
+import React, { FC, useEffect } from 'react'
+import Sidebar from './components/Sidebar/Sidebar'
+import { BrowserRouter } from 'react-router-dom'
+import classes from './App.module.scss'
+import AppRouter from './components/AppRouter'
+import { useDispatch } from 'react-redux'
+import ClientsService from './API/ClientsService'
+import { setClients } from './store/clientsSlice'
+import { AppDispatch } from './store'
 
 const App: FC = () => {
-  return (<p>Hello world</p>);
+	const dispatch = useDispatch<AppDispatch>()
+
+	useEffect(() => {
+		const fetchClients = async () => {
+			const clients = await ClientsService.getAll()
+			dispatch(setClients(clients))
+		}
+
+		fetchClients()
+	}, [])
+
+	return (
+		<BrowserRouter>
+			<div className={classes.appLayout}>
+				<Sidebar />
+
+				<div className={classes.appContent}>
+					<AppRouter />
+				</div>
+			</div>
+		</BrowserRouter>
+	)
 }
 
-export default App;
+export default App

@@ -1,0 +1,23 @@
+.clientsPage {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+
+.clientsPageList {
+  flex-grow: 1;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: 16px;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--text-color);
+    border-radius: 4px;
+    border-inline: 4px solid var(--content-bg-color);
+  }
+}

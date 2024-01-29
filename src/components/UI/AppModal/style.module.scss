@@ -1,0 +1,43 @@
+.appModal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  transition-property: visibility, opacity;
+  transition-timing-function: linear;
+  transition-duration: 0.25s;
+
+  &.active {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.appModalContent {
+  display: grid;
+  row-gap: 24px;
+  padding: 32px;
+  background: var(--content-bg-color);
+  width: 400px;
+  border-radius: 16px;
+
+  @include --md {
+    row-gap: 16px;
+    padding: 16px;
+    width: 70%;
+  }
+}
+
+.appModalBody {
+  display: grid;
+  grid-row-gap: 12px;
+}
+
+.appModalActions {
+  display: flex;
+  column-gap: 10px;
+}

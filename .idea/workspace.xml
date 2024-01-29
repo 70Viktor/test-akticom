@@ -4,11 +4,61 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="207de7c9-9ac8-4f81-a41f-40f445878f1d" name="Changes" comment="update README">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="207de7c9-9ac8-4f81-a41f-40f445878f1d" name="Changes" comment="update package.json, ignore ./idea">
+      <change afterPath="$PROJECT_DIR$/.cracorc.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/db.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/API/ClientsService.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AppRouter.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ClientForm/ClientForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ClientForm/style.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ClientItem/ClientItem.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ClientItem/style.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ClientsFilter/ClientsFilter.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ClientsFilter/style.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ClientsList/ClientsList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ClientsList/style.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Sidebar/style.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/AppButton/AppButton.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/AppButton/style.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/AppInput/AppInput.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/AppInput/style.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/AppModal/AppModal.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/AppModal/style.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/AppSelect/AppSelect.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/AppSelect/style.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/SearchInput/SearchInput.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/SearchInput/style.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useFilteredClients.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useInput.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/ClientPage/ClientPage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/ClientPage/style.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/MainPage/MainPage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/MainPage/style.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/router/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/selectOptions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/sidebarLinks.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/clientsSlice.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/_base.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/_breakpoints.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/_colors.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/_reset.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/utils/_ease.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/utils/_hover.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/utils/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utlis/getFormattedDate.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,15 +83,32 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Github_projects/test-akticom/src/pages/ClientPage",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Github_projects\\test-akticom\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
     "ts.external.directory.path": "C:\\Github_projects\\test-akticom\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Github_projects\test-akticom\src\pages\ClientPage" />
+      <recent name="C:\Github_projects\test-akticom\src\static" />
+      <recent name="C:\Github_projects\test-akticom\src\hooks" />
+      <recent name="C:\Github_projects\test-akticom\src\pages\MainPage" />
+      <recent name="C:\Github_projects\test-akticom\src\components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Github_projects\test-akticom\src\styles\utils" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -50,7 +117,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1706518877582</updated>
-      <workItem from="1706518880398" duration="1795000" />
+      <workItem from="1706518880398" duration="11960000" />
     </task>
     <task id="LOCAL-00001" summary="create-react-app with ts">
       <option name="closed" value="true" />
@@ -92,7 +159,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706520076658</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="update package.json, ignore ./idea">
+      <option name="closed" value="true" />
+      <created>1706520718004</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1706520718004</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -102,6 +177,7 @@
     <MESSAGE value="create-react-app with ts" />
     <MESSAGE value="remove default files" />
     <MESSAGE value="update README" />
-    <option name="LAST_COMMIT_MESSAGE" value="update README" />
+    <MESSAGE value="update package.json, ignore ./idea" />
+    <option name="LAST_COMMIT_MESSAGE" value="update package.json, ignore ./idea" />
   </component>
 </project>

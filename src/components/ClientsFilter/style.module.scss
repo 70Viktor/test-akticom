@@ -1,0 +1,15 @@
+.filter {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 12px;
+  padding-block: 20px;
+  background: var(--content-bg-color);
+
+  @include --md {
+    padding-block: 12px;
+  }
+
+  @include --sm {
+    grid-template-columns: 1fr;
+  }
+}

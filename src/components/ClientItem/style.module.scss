@@ -1,0 +1,76 @@
+.clientCard {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-color);
+}
+
+.clientHead {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  margin-bottom: 20px;
+
+  @include --md {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    row-gap: 12px;
+  }
+}
+
+.clientFullName {
+  font-size: 20px;
+}
+
+.clientDetails {
+  padding-left: 12px;
+  display: grid;
+  grid-row-gap: 12px;
+}
+
+.clientActions {
+  display: flex;
+  column-gap: 8px;
+  margin-left: auto;
+
+  @include --md {
+    margin-left: unset;
+    row-gap: 4px;
+  }
+
+  @include --sm {
+    flex-direction: column;
+  }
+}
+
+.clientActionsItem {
+  &:not(:last-child) {
+    padding-right: 8px;
+    border-right: 1px solid var(--border-color);
+
+    @include --md {
+      padding-right: 0;
+      border-right: 0;
+    }
+  }
+}
+
+.clientStatus {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 16px;
+  border-radius: 50%;
+}
+
+.active {
+  background: forestgreen;
+}
+
+.paused {
+  background: yellow;
+}
+
+.inactive {
+  background: orangered;
+}

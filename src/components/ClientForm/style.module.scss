@@ -1,0 +1,13 @@
+.clientFormTrigger {
+  padding-block: 20px;
+  background: var(--content-bg-color);
+
+  @include --md {
+    padding-block: 12px;
+  }
+
+  > * {
+    display: block;
+    margin-left: auto;
+  }
+}
