@@ -5,11 +5,13 @@ import { IClient, IFilter } from '../types'
 export interface ClientsState {
 	clients: IClient[]
 	filter: IFilter
+	isLoading: boolean
 }
 
 const initialState: ClientsState = {
 	clients: [],
 	filter: { query: '', status: '' },
+	isLoading: true,
 }
 
 export const clientsSlice = createSlice({
@@ -30,10 +32,18 @@ export const clientsSlice = createSlice({
 		setFilter: (state, action: PayloadAction<IFilter>) => {
 			state.filter = action.payload
 		},
+		setLoading: (state, action: PayloadAction<boolean>) => {
+			state.isLoading = action.payload
+		},
 	},
 })
 
-export const { setClients, pushClient, removeClientByID, setFilter } =
-	clientsSlice.actions
+export const {
+	setClients,
+	pushClient,
+	removeClientByID,
+	setFilter,
+	setLoading,
+} = clientsSlice.actions
 
 export default clientsSlice.reducer

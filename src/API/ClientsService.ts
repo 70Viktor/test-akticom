@@ -1,5 +1,6 @@
 import axios from 'axios'
 import { IClientInitial, typeStatus } from '../types'
+import { clientsFallback } from '../static/clientsFallback'
 
 type GetAllResponse = {
 	data: IClientInitial[]
@@ -10,7 +11,10 @@ enum clientsUrl {
 }
 export default class ClientsService {
 	static async getAll() {
-		const clients: GetAllResponse = await axios.get(clientsUrl.getAll)
+		const clients: GetAllResponse = await axios
+			.get(clientsUrl.getAll)
+			// if JSON-server not running
+			.catch(() => ({ data: clientsFallback }))
 
 		return clients.data.map((clientInitial) => {
 			let statusValue: typeStatus

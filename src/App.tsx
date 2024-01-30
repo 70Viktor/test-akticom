@@ -5,7 +5,7 @@ import classes from './App.module.scss'
 import AppRouter from './components/AppRouter'
 import { useDispatch } from 'react-redux'
 import ClientsService from './API/ClientsService'
-import { setClients } from './store/clientsSlice'
+import { setClients, setLoading } from './store/clientsSlice'
 import { AppDispatch } from './store'
 
 const App: FC = () => {
@@ -15,6 +15,7 @@ const App: FC = () => {
 		const fetchClients = async () => {
 			const clients = await ClientsService.getAll()
 			dispatch(setClients(clients))
+			dispatch(setLoading(false))
 		}
 
 		fetchClients()

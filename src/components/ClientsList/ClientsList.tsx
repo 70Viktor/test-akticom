@@ -13,6 +13,7 @@ const ClientsList: FC = () => {
 	const [removingID, setRemovingID] = useState<string>('')
 	const filteredClients = useClients()
 	const clients = useSelector((state: RootState) => state.clients.clients)
+	const isLoading = useSelector((state: RootState) => state.clients.isLoading)
 	const dispatch = useDispatch<AppDispatch>()
 
 	const confirmRemove = (id: string) => {
@@ -45,6 +46,10 @@ const ClientsList: FC = () => {
 			<AppButton onClick={() => setVisible(false)}>Отмена</AppButton>
 		</>
 	)
+
+	if (isLoading) {
+		return <p className={classes.message}>Клиенты загружаются...</p>
+	}
 
 	if (!clients.length) {
 		return <p className={classes.message}>Клиентов нет</p>
