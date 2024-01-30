@@ -3,7 +3,7 @@ import MainPage from '../pages/MainPage/MainPage'
 import ClientPage from '../pages/ClientPage/ClientPage'
 
 export enum routerPaths {
-	main = '/',
+	main = '/test-akticom',
 	client = '/client/:id',
 }
 

@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="207de7c9-9ac8-4f81-a41f-40f445878f1d" name="Changes" comment="add homepage to package.json">
-      <change afterPath="$PROJECT_DIR$/src/static/clientsFallback.ts" afterDir="false" />
+    <list default="true" id="207de7c9-9ac8-4f81-a41f-40f445878f1d" name="Changes" comment="add clientsFallback, add Loading state">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/API/ClientsService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/ClientsService.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ClientsList/ClientsList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ClientsList/ClientsList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/ClientPage/ClientPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ClientPage/ClientPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/clientsSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/clientsSlice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/sidebarLinks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/sidebarLinks.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +67,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1706518877582</updated>
-      <workItem from="1706518880398" duration="15533000" />
+      <workItem from="1706518880398" duration="16479000" />
     </task>
     <task id="LOCAL-00001" summary="create-react-app with ts">
       <option name="closed" value="true" />
@@ -168,7 +165,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706579175661</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add clientsFallback, add Loading state">
+      <option name="closed" value="true" />
+      <created>1706580862711</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1706580862711</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,6 +188,7 @@
     <MESSAGE value="add gh-pages dependency" />
     <MESSAGE value="fix README.md" />
     <MESSAGE value="add homepage to package.json" />
-    <option name="LAST_COMMIT_MESSAGE" value="add homepage to package.json" />
+    <MESSAGE value="add clientsFallback, add Loading state" />
+    <option name="LAST_COMMIT_MESSAGE" value="add clientsFallback, add Loading state" />
   </component>
 </project>

@@ -11,12 +11,16 @@ enum clientsUrl {
 }
 export default class ClientsService {
 	static async getAll() {
-		const clients: GetAllResponse = await axios
-			.get(clientsUrl.getAll)
-			// if JSON-server not running
-			.catch(() => ({ data: clientsFallback }))
+		let response: GetAllResponse
 
-		return clients.data.map((clientInitial) => {
+		try {
+			response = await axios.get(clientsUrl.getAll)
+		} catch {
+			// if JSON-server not running
+			response = { data: clientsFallback }
+		}
+
+		return response.data.map((clientInitial) => {
 			let statusValue: typeStatus
 			switch (clientInitial.status) {
 				case 'Активен': {
