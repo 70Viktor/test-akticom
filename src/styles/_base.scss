@@ -1,4 +1,5 @@
 html {
+  overscroll-behavior-y: none;
   color: var(--text-color);
   background: var(--bg-color);
   font-family: 'Jura', sans-serif;
