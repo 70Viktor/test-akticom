@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/test-akticom/static/css/main.023f4c57.css",
-    "main.js": "/test-akticom/static/js/main.57e78b21.js",
+    "main.js": "/test-akticom/static/js/main.f9b7ae5c.js",
     "index.html": "/test-akticom/index.html",
     "main.023f4c57.css.map": "/test-akticom/static/css/main.023f4c57.css.map",
-    "main.57e78b21.js.map": "/test-akticom/static/js/main.57e78b21.js.map"
+    "main.f9b7ae5c.js.map": "/test-akticom/static/js/main.f9b7ae5c.js.map"
   },
   "entrypoints": [
     "static/css/main.023f4c57.css",
-    "static/js/main.57e78b21.js"
+    "static/js/main.f9b7ae5c.js"
   ]
 }
