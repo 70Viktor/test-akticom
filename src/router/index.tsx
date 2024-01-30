@@ -4,7 +4,7 @@ import ClientPage from '../pages/ClientPage/ClientPage'
 
 export enum routerPaths {
 	main = '/test-akticom',
-	client = '/test-akticom/client/:id',
+	client = '/client/:id',
 }
 
 export interface IRoute {
